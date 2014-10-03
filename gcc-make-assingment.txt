@@ -1,0 +1,31 @@
+1. Write a C program that accepts 'n' user-names one-by-one and prints them in a sorted order. A linked list has to be used to maintain the set of names to keep the value of 'n' variable. Each node in the list stores a user-name. When a name is entered it is inserted at its 'proper place' in the list. After all names are entered, the list is printed.
+
+2. The linked list operations (addition, insertion, deletion) should be implemented in a separate file (userlist.c). A makefile should be used to build the the executable 'user-sorter'.
+
+3. The program should be commented using doxygen style comments and doxygen should be used to generate reports in html and latex (which has to be compiled into a pdf). Mention your name, description of each function and its parameters at appropriate places in the program with doxygen-style tags so that this information automatically appears in the generated reports.
+
+
+Example:
+
+Enter user name: yyy
+
+(list: yyy)
+
+Do you wish to continue? y
+
+Enter user name: ppp
+
+(list: ppp->yyy)
+
+Do you wish to continue? y
+
+Enter user name: rrr
+
+(list: ppp->rrr->yyy)
+
+Do you wish to continue? n
+
+sorted list:
+ppp
+rrr
+yyy
